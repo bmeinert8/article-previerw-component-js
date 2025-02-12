@@ -28,6 +28,7 @@
   font-weight: bold;
   line-height: 140%;
   letter-spacing: 0.12%;
+  color: var(--Grey900)
 }
 
 .text-preset-3 {
@@ -78,7 +79,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* 8. Improve line wrapping */
 p {
-  word-wrap: break-word;
   text-wrap: balance;
 }
 
@@ -124,4 +124,36 @@ h1 {
 
 .text-section {
   margin-bottom: 48px;
+}
+
+.author-section, .author {
+  display: flex;
+}
+
+.author {
+  gap: 16px;
+  width: 170px
+}
+
+
+.author-section {
+  height: 40px;
+  gap: 61px;
+}
+
+.author-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.author-date {
+  color: var(--Grey400)
+}
+
+button{
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: none;
+  align-self: center;
+  background-color: var(--Grey200);
 }
