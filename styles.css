@@ -13,12 +13,14 @@
   font-weight: bold;
   line-height: 130%;
   letter-spacing: 0.016px;
+  color: var(--Grey900)
 }
 
 .text-preset-2-medium {
   font-size: 0.813rem;
   line-height: 140%;
   letter-spacing: 0.12%;
+  color: var(--Grey500)
 }
 
 .text-preset-2-bold {
@@ -51,6 +53,11 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Manrope", serif;
   background-color: var(--Grey200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* 5. Improve media defaults */
@@ -71,9 +78,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* 8. Improve line wrapping */
 p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
   text-wrap: balance;
 }
 
@@ -82,4 +87,41 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/* Page Layout */
+.main-container, article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  width: 327px;
+  height: 538px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.image-section {
+  margin-bottom: 32px;
+}
+
+.drawers-image {
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article {
+  width: 267px;
+  text-wrap: none;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.text-section {
+  margin-bottom: 48px;
 }
