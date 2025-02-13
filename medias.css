@@ -16,6 +16,36 @@
 /* Tablet */
 @media (min-width: 768px) {
 
+  .main-container{
+    width: 608px;
+    height: 346px;
+    flex-direction: row;
+  }
+
+  .image-section{
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .drawers-image{
+    height: 346px;
+    width: 229px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  article{
+    width: 311px;
+  }
+
+  .text-section{
+    margin-bottom: 24px;
+  }
+
+  .author-section{
+    gap: 100px;
+  }
 }
 
 /* Laptop */
