@@ -13,25 +13,31 @@
   font-weight: bold;
   line-height: 130%;
   letter-spacing: 0.016px;
+  color: var(--Grey900)
 }
 
 .text-preset-2-medium {
   font-size: 0.813rem;
   line-height: 140%;
-  letter-spacing: 0.12%;
+  letter-spacing: 0.12px;
+  color: var(--Grey500)
 }
 
 .text-preset-2-bold {
   font-size: 0.813rem;
   font-weight: bold;
+  letter-spacing: 0.12px;
   line-height: 140%;
-  letter-spacing: 0.12%;
+  color: var(--Grey900)
 }
 
 .text-preset-3 {
   font-size: 0.813rem;
   line-height: 140%;
-  letter-spacing: 25%;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: var(--Grey400);
+  text-transform: uppercase;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -51,6 +57,11 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Manrope", serif;
   background-color: var(--Grey200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* 5. Improve media defaults */
@@ -64,22 +75,114 @@ input, button, textarea, select {
   font: inherit;
 }
 
-/* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
 /*
   9. Create a root stacking context
 */
 #root, #__next {
   isolation: isolate;
 }
+
+/* Page Layout */
+.main-container, article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  width: 327px;
+  height: 538px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.image-section {
+  margin-bottom: 32px;
+}
+
+.drawers-image {
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article {
+  width: 267px;
+  text-wrap: none;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.text-section {
+  margin-bottom: 48px;
+}
+
+.author-section, .author {
+  display: flex;
+}
+
+.author {
+  gap: 16px;
+  width: 178px
+}
+
+
+.author-section {
+  height: 40px;
+  gap: 54px
+}
+
+.author-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.author-date {
+  color: var(--Grey400)
+}
+
+.share-button{
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: none;
+  align-self: center;
+  background-color: var(--Grey200);
+}
+
+.share-button:hover {
+  cursor: pointer;
+}
+
+.share-section {
+  background-color: var(--Grey900);
+  position: absolute;
+  top: 38.45rem;
+  width: 327px;
+  height: 76px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-container{
+  display: flex;
+  align-items: center;
+  width: 267px;
+  gap: 20px;
+}
+
+.last{
+  margin-right: 37px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
