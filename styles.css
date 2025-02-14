@@ -97,17 +97,17 @@ input, button, textarea, select {
 }
 
 .image-section {
-  margin-bottom: 32px;
-}
-
-.drawers-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
+  overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 article {
-  width: 267px;
+  padding: 34px 32px 20px;
   text-wrap: none;
 }
 
@@ -130,9 +130,11 @@ h1 {
 
 
 .author-section {
-  height: 40px;
-  gap: 54px
+  display:flex;
+  position: relative;
+  gap: 40px;
 }
+
 
 .author-avatar {
   height: 40px;
@@ -140,7 +142,7 @@ h1 {
   border-radius: 50%;
 }
 .author-date {
-  color: var(--Grey400)
+  color: var(--Grey400);
 }
 
 .share-button{
@@ -155,33 +157,43 @@ h1 {
   cursor: pointer;
 }
 
-.share-section {
-  background-color: var(--Grey900);
+.share-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% + 74px);
+  height: calc(100% + 40px);
+  padding: 20px 32px;
   position: absolute;
-  top: 38.45rem;
-  width: 327px;
-  height: 76px;
+  top: -20px;
+  left: -37px;
+  background-color: var(--Grey900);border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.share-container.active {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 0;
+}
+
+.share-bar {
   display: flex;
+  gap: 16px;
   align-items: center;
-  justify-content: center;
 }
 
-.share-container{
-  display: flex;
-  align-items: center;
-  width: 267px;
-  gap: 20px;
+.share-bar button {
+  background-color: var(--Grey500);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 46px
 }
 
-.last{
-  margin-right: 37px;
-}
-
-.hidden {
-  display: none;
-}
 
 
 
