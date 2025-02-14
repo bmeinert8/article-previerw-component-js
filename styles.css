@@ -97,11 +97,12 @@ input, button, textarea, select {
 }
 
 .image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 32px;
-}
-
-.drawers-image {
   height: 200px;
+  overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -130,6 +131,7 @@ h1 {
 
 
 .author-section {
+  position: relative;
   height: 40px;
   gap: 54px
 }
@@ -156,9 +158,10 @@ h1 {
 }
 
 .share-section {
+  width: 100%;
   background-color: var(--Grey900);
   position: absolute;
-  top: 38.45rem;
+  bottom: 0;
   width: 327px;
   height: 76px;
   border-bottom-right-radius: 10px;
@@ -169,6 +172,7 @@ h1 {
 }
 
 .share-container{
+  width: 100%;
   display: flex;
   align-items: center;
   width: 267px;
