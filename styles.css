@@ -180,6 +180,21 @@ h1 {
   z-index: 0;
 }
 
+.share-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.share-bar button {
+  background-color: var(--Grey500);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 46px
+}
+
+
 
 
 
