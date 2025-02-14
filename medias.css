@@ -1,17 +1,3 @@
-/* Mobile S */
-@media (min-width: 320px) {
-
-}
-
-/* Mobile M */
-@media (min-width: 375px) {
-
-}
-
-/* Mobile L */
-@media (min-width: 425px) {
-
-}
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -24,7 +10,11 @@
 
   .image-section{
     margin-bottom: 0;
-    margin-right: 32px;
+    height: 346px;
+    width: 229px;
+    display: block;
+    border-top-right-radius:0;
+
   }
 
   .drawers-image{
@@ -36,16 +26,23 @@
   }
 
   article{
-    width: 311px;
+    width: 376px;
+    text-wrap: wrap;
+  }
+
+  h1{
+    margin-bottom: 20px;
   }
 
   .text-section{
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .author-section{
-    gap: 100px;
+    gap: 65px;
   }
+
+  
 }
 
 /* Laptop */
