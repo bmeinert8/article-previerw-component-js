@@ -42,7 +42,45 @@
     gap: 65px;
   }
 
-  
+  .share-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(80%);
+    height: calc(100%);
+    padding: 25px 32px;
+    position: absolute;
+    top: -73px;
+    left: 150px;
+    background-color: var(--Grey900);border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s;
+    z-index:-1
+  }
+
+  .share-container::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100px; /* Adjust this value to align with the Facebook icon */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Grey900);
+  }
+
+  .share-sontainer.active {
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .second-share-button{
+    display: none;
+  }
 }
 
 /* Laptop */
