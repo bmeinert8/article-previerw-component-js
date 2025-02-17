@@ -28,7 +28,7 @@ This project is an article preview component, originating from a [Frontend Mento
 
 ## Live Site
 
-[Live Site](#)
+[Live Site](https://bmeinert8.github.io/article-previerw-component-js/)
 
 ## How to Use
 
