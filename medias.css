@@ -1,17 +1,17 @@
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 
   .main-container{
-    width: 608px;
-    height: 346px;
+    width: 38rem;
+    height: 21.625rem;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .image-section{
     margin-bottom: 0;
-    height: 346px;
-    width: 229px;
+    height: 21.625rem;
+    width: 14.3125rem;
     display: block;
     border-top-right-radius:0;
 
@@ -20,27 +20,27 @@
   .drawers-image{
     height: 100%;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
     border-top-right-radius: 0;
     object-fit: cover;
   }
 
   article{
-    width: 376px;
+    width: 23.5rem;
     text-wrap: wrap;
   }
 
   h1{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .text-section{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .author-section{
-    gap: 65px;
+    gap: 4.0625rem;
   }
 
   .share-container{
@@ -49,12 +49,12 @@
     align-items: center;
     width: calc(80%);
     height: calc(100%);
-    padding: 25px 32px;
+    padding: 1.5625rem 2rem;
     position: absolute;
-    top: -73px;
-    left: 150px;
-    background-color: var(--Grey900);border-bottom-left-radius: 10px;
-    border-radius: 10px;
+    top: -4.5625rem;
+    left: 9.375rem;
+    background-color: var(--Grey900);border-bottom-left-radius: 0.625rem;
+    border-radius: 0.625rem;
     transform: translateY(100%);
     opacity: 0;
     transition: 0.5s;
@@ -65,12 +65,12 @@
     content: '';
     position: absolute;
     top: 100%;
-    left: 100px; /* Adjust this value to align with the Facebook icon */
+    left: 6.25rem; /* Adjust this value to align with the Facebook icon */
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--Grey900);
+    border-left: 0.625rem solid transparent;
+    border-right: 0.625rem solid transparent;
+    border-top: 0.625rem solid var(--Grey900);
   }
 
   .share-container.active {
@@ -85,24 +85,24 @@
 }
 
 /* Laptop L */
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .main-container{
-    width: 730px;
-    height: 280px;
+    width: 45.625rem;
+    height: 17.5rem;
   }
   
   .image-section{
-    height: 280px;
-    width: 285px;
+    height: 17.5rem;
+    width: 17.8125rem;
   }
 
   article{
-    width: 440px;
+    width: 27.5rem;
     text-wrap: none;
   }
 
   .author-section{
-    gap: 150px;
+    gap: 9.375rem;
   }
 
   .share-container{
@@ -111,12 +111,12 @@
     align-items: center;
     width: calc(65%);
     height: calc(100%);
-    padding: 25px 32px;
+    padding: 1.5625rem 2rem;
     position: absolute;
-    top: -73px;
-    left: 233px;
-    background-color: var(--Grey900);border-bottom-left-radius: 10px;
-    border-radius: 10px;
+    top: -4.5625rem;
+    left: 14.5625rem;
+    background-color: var(--Grey900);border-bottom-left-radius: 0.625rem;
+    border-radius: 0.625rem;
     transform: translateY(100%);
     opacity: 0;
     transition: 0.5s;
@@ -127,11 +127,11 @@
     content: '';
     position: absolute;
     top: 100%;
-    left: 100px; /* Adjust this value to align with the Facebook icon */
+    left: 6.25rem; /* Adjust this value to align with the Facebook icon */
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--Grey900);
+    border-left: 0.625rem solid transparent;
+    border-right: 0.625rem solid transparent;
+    border-top: 0.625rem solid var(--Grey900);
   }
 }

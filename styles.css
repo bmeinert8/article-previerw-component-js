@@ -90,30 +90,30 @@ input, button, textarea, select {
 }
 
 .main-container {
-  width: 327px;
-  height: 538px;
+  width: 20.438rem;
+  height: 33.625rem;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .image-section {
-  height: 200px;
+  height: 12.5rem;
   overflow: hidden;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
 }
 
 article {
-  padding: 34px 32px 20px;
+  padding: 2.125rem 2rem 1.25rem;
   text-wrap: none;
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .text-section {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .author-section, .author {
@@ -121,29 +121,28 @@ h1 {
 }
 
 .author {
-  gap: 16px;
-  width: 178px
+  gap: 1rem;
+  width: 11.125rem;
 }
-
 
 .author-section {
-  display:flex;
+  display: flex;
   position: relative;
-  gap: 40px;
+  gap: 2.5rem;
 }
-
 
 .author-avatar {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
 }
+
 .author-date {
   color: var(--Grey400);
 }
 
-.share-button{
-  padding: 10px 10px;
+.share-button {
+  padding: 0.625rem 0.625rem;
   border-radius: 50%;
   border: none;
   align-self: center;
@@ -158,14 +157,15 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% + 74px);
-  height: calc(100% + 40px);
-  padding: 20px 32px;
+  width: calc(100% + 4.625rem);
+  height: calc(100% + 2.5rem);
+  padding: 1.25rem 2rem;
   position: absolute;
-  top: -20px;
-  left: -37px;
-  background-color: var(--Grey900);border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  top: -1.25rem;
+  left: -2.313rem;
+  background-color: var(--Grey900);
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
   transform: translateY(100%);
   opacity: 0;
   transition: 0.5s;
@@ -179,7 +179,7 @@ h1 {
 
 .share-bar {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -187,8 +187,8 @@ h1 {
   background-color: var(--Grey500);
   border: none;
   border-radius: 50%;
-  padding: 10px;
-  margin-left: 46px
+  padding: 0.625rem;
+  margin-left: 2.875rem;
 }
 
 
