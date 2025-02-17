@@ -97,9 +97,6 @@ input, button, textarea, select {
 }
 
 .image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 200px;
   overflow: hidden;
   border-top-left-radius: 10px;

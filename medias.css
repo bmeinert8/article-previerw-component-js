@@ -1,18 +1,3 @@
-/* Mobile S */
-@media (min-width: 320px) {
-
-}
-
-/* Mobile M */
-@media (min-width: 375px) {
-
-}
-
-/* Mobile L */
-@media (min-width: 425px) {
-
-}
-
 /* Tablet */
 @media (min-width: 768px) {
 
@@ -20,40 +5,132 @@
     width: 608px;
     height: 346px;
     flex-direction: row;
+    gap: 20px;
   }
 
   .image-section{
     margin-bottom: 0;
-    margin-right: 32px;
+    height: 346px;
+    width: 229px;
+    display: block;
+    border-top-right-radius:0;
+
   }
 
   .drawers-image{
-    height: 346px;
-    width: 229px;
+    height: 100%;
+    width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0;
   }
 
   article{
-    width: 311px;
+    width: 376px;
+    text-wrap: wrap;
+  }
+
+  h1{
+    margin-bottom: 20px;
   }
 
   .text-section{
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .author-section{
-    gap: 100px;
+    gap: 65px;
   }
-}
 
-/* Laptop */
-@media (min-width: 1024px) {
+  .share-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(80%);
+    height: calc(100%);
+    padding: 25px 32px;
+    position: absolute;
+    top: -73px;
+    left: 150px;
+    background-color: var(--Grey900);border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+  }
 
+  .share-container::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100px; /* Adjust this value to align with the Facebook icon */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Grey900);
+  }
+
+  .share-container.active {
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .second-share-button{
+    display: none;
+  }
 }
 
 /* Laptop L */
 @media (min-width: 1440px) {
+  .main-container{
+    width: 730px;
+    height: 280px;
+  }
+  
+  .image-section{
+    height: 280px;
+    width: 285px;
+  }
 
+  article{
+    width: 440px;
+    text-wrap: none;
+  }
+
+  .author-section{
+    gap: 150px;
+  }
+
+  .share-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(65%);
+    height: calc(100%);
+    padding: 25px 32px;
+    position: absolute;
+    top: -73px;
+    left: 233px;
+    background-color: var(--Grey900);border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  .share-container::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100px; /* Adjust this value to align with the Facebook icon */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Grey900);
+  }
 }
